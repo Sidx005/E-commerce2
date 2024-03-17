@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Poppins:ital,wght@1,500&display=swap');
+
+        *{
+            margin: 0;
+           padding: 0;
+           font-family: 'Poppins', sans-serif;
+           box-sizing: border-box;
+        }
+        /* background: linear-gradient(165deg, rgb(0, 0, 0) ,rgb(0, 0, 0), rgb(23, 27, 33))no-repeat ;  */
+
+   
+
+.contain{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(165deg, rgb(0, 0, 0) ,rgb(0, 0, 0), rgb(23, 27, 33))no-repeat ; 
+    overflow: hidden;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    top: 0;
+padding: 20px;
+background: rgba(0,0,0,0.1);
+z-index: 999;
+}
+nav img{
+    width: 30px;
+    height: 30px;
+}
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+}
+.main button{
+    padding: 20px;
+      border-radius: 10px;
+      width: 200px;
+      background-color: rgb(70, 70, 170);   
+       margin-top: 20px;
+
+}
+.main button a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.img{
+    width: 500px;
+    height: 500px;
+
+}
+.img img{
+    height: 100%;
+    width: 100%;
+}
+@media(max-width:768px){
+    .main{
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 10rem;
+        text-align: center;
+    }
+  
+}
+#Why{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color:#fff;
+    align-items: center;
+    padding: 30px;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 0.5s;
+}
+#Why.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+#Why h1{
+    text-align: center;
+    position: relative;
+cursor: pointer;
+}
+
+#Why h1:after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: coral;
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     transition: 0.5s;
+}
+#Why h1:hover:after{
+    width: 100%;
+
+}
+.section{
+display: flex;
+gap: 5rem;
+}
+.section span{
+    text-align: justify;
+    text-wrap: wrap;
+    display: flex;
+    width: 300px;
+
+
+}
+.watchimage{
+    height: 200px;
+    width: 200px;
+    background: #000;
+    border-radius: 5px;
+}
+.watchimage img{
+    height:100%;
+    width: 100%;
+    border-radius: 5px;
+}
+@media (max-width:769px) {
+    .section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #Why{
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<div class="contain">
+<nav>
+    <img src="user (2).png" alt="">
+</nav>    
+<div class="main">
+    <span>
+<h2>Smart Watches</h2>
+<h3>CRAFTED FOR YOU</h3>
+<button><a href="page.html">Shop Now</a></button>
+</span>
+<div class="img">
+<img src="watch2remove.png" alt="">
+</div>
+</div>
+<section id="Why">
+<h1>Why us
+</h1>
+<div class="section">
+<span>At our watch website, we offer more than just timepieces.
+    Our collection combines exquisite craftsmanship with unmatched service. With a curated selection catering to every style, we prioritize authenticity, quality, and your satisfaction. 
+   Experience luxury and reliability like never before with us.</span>
+<div class="watchimage">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkLsoh0-1HsekTW09ZW9hI9a_TVwaK6anb476-YLxWSAPUHUgbpvVoeG4TfIiHRt2U7o4&usqp=CAU" alt="">
+</div>
+</div>
+</section>
+</div> 
+<script>
+    window.addEventListener("scroll",reveal);
+    function reveal() {
+        var reveals = document.querySelectorAll('#Why');
+        for(var i=0;i<reveals.length;i++){
+            var windowheight=window.innerHeight;
+            var revealTop=reveals[i].getBoundingClientRect().top;
+            var revealpoint=150;
+            if(revealTop<windowheight-revealpoint){
+                reveals[i].classList.add('active');
+            }else              
+            {
+                reveals[i].classList.remove('active');
+               }
+        }
+    }
+</script>
+</body>
+</html>

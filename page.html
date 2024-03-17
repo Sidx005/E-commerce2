@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Document</title>
+  <style>
+      .swipe-contain {
+        color: #000;
+      width: 100%;
+    display: flex;
+
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    position: relative;
+    flex-direction: column;
+    gap: 25px;
+    }
+    .swiper{
+width: 100%;
+height: 100%;
+padding: 23px;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      padding: 15px;
+      background-color: transparent;
+      box-shadow: 0 0 15px 0 black;
+      flex-direction: column;
+      width: 220px;
+      height: 220px;
+      border-radius: 5px;
+     font-size: 18px;      display: flex;
+      justify-content: center;
+      color: #000;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .s1::before{
+      content: "";
+      height: 120px;
+      width: 300px;
+      max-width: 100%;
+      background:url(watch1.png) center no-repeat ;
+      background-size: cover;
+      border-radius: 5px;
+    }
+    .s2::before{
+      content: "";
+      height: 120px;
+      width: 300px;
+      max-width: 100%;
+      background:url(watch1.png) center no-repeat ;
+      background-size: cover;
+      border-radius: 5px;
+    }
+    .s3::before{
+      content: "";
+      height: 120px;
+      width: 300px;
+      max-width: 100%;
+      background:url(watch1.png) center no-repeat ;
+      background-size: cover;
+      border-radius: 5px;
+    }
+    .s4::before{
+      content: "";
+      height: 120px;
+      width: 300px;
+      max-width: 100%;
+      background:url(watch1.png) center no-repeat ;
+      background-size: cover;
+      border-radius: 5px;
+    }
+    .s5::before{
+      content: "";
+      height: 120px;
+      width: 300px;
+      max-width: 100%;
+      background:url(watch1.png) center no-repeat ;
+      background-size: cover;
+      border-radius: 5px;
+    }
+    .s6::before{
+      content: "";
+      height: 120px;
+      width: 300px;
+      max-width: 100%;
+      background:url(watch1.png) center no-repeat ;
+      background-size: cover;
+      border-radius: 5px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav2">
+      <ul>
+        <li><a  onclick='closeNav()' style="color: #000;"><i class="fa-solid fa-x"></i></a></li>
+       <li><a href="#Home">Home</a></li>
+       <li><a href="#About">About</a></li>
+       <li><a href="#">Premium</a></li>
+       <li><a href="shop.html">Men</a></li>
+       <li><a href="women.html">Women</a></li>
+      </ul>
+    </div>
+  <div class="nav">
+    <div class="navbar1">
+    <div class="logo">
+    <img src="Logo.png" alt="" class="apex">
+
+    </div>
+
+    <ul class="list">
+      <li class="li" title="Home"><a href="#Home" style="color: coral;">Home</a></li>
+      <li class="li" title="About"><a href="#About">About</a></li>
+      <li class="li" title="Premium"><a href="#Premium">Premium</a></li>
+      <li class="li" title="Men"><a href="shop.html">Men</a></li>
+      <li class="li" title="Women"><a href="women.html">Women</a></li>
+      <li style="color: #fff;"  class="show"><a href="#" onclick="showbar()"><i class="fa-solid fa-bars"></i></a></li>
+
+    </ul>
+  </div>
+ 
+  </div>
+
+  <div class="watch1" id="Home" style="background: blue;">
+<div class="slide-wrapper">
+  <div class="slider">
+    <img src="https://www.financialexpress.com/wp-content/uploads/2022/05/Titan-Raga-X-Alia-Bhatt-2.jpg" alt="" id="slide-1">
+    <img src="watches (1).png" alt="" id="slide-2">
+    <img src="2-up6r1wKlt-transformed.png" alt="" id="slide-3">
+ 
+    <div class="slider-nav">
+    <a href="#slide-1"></a><a href="#slide-2"></a><a href="#slide-3"></a>
+  </div> </div>
+ 
+</div>
+
+    </div>
+<div class="swipe-contain">
+  <h2>Our Collections</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide s1" >
+        <span>
+          <p>Name:'Rolex'</p>
+          <p>Price:$1.99</p>
+        </span>
+
+        </div>
+        <div class="swiper-slide s2">
+          <span>
+            <p>Name:'Rolex'</p>
+            <p>Price:$1.99</p>
+          </span>
+        </div>
+        <div class="swiper-slide s3">
+          <span>
+            <p>Name:'Rolex'</p>
+            <p>Price:$1.99</p>
+          </span>
+          </div>
+        <div class="swiper-slide s4"> 
+          <span>
+          <p>Name:'Rolex'</p>
+          <p>Price:$1.99</p>
+        </span></div>
+        <div class="swiper-slide s5">
+          <span>
+            <p>Name:'Rolex'</p>
+            <p>Price:$1.99</p>
+          </span>  
+        </div>
+        <div class="swiper-slide s6">
+          
+          <span>
+            <p>Name:'Rolex'</p>
+            <p>Price:$1.99</p>
+          </span>
+        </div>
+       
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    </div>
+  <div class="card-container" id="cards">
+   
+  </div>
+  <div class="About" id="About">
+    <div class="About-container">
+    <span>
+      <h3>About
+        <div class="underline"></div>
+      </h3>
+      <br>
+      <p>
+        Welcome to Apex Watches, where timekeeping meets elegance. At Apex, we pride ourselves on crafting timepieces that blend sophistication with precision engineering, embodying the pinnacle of horological excellence.
+      <br>
+        <br>  From classic designs that evoke timeless sophistication to modern interpretations that push the boundaries of style, our collection caters to every wrist and every occasion.
+      </p>
+    </span>
+    </div>
+  </div>
+    
+
+<div id="wardrobe">
+  <h2>Wardrobe</h2>
+  <div class="wrap">
+  <button id="prev"><</button>
+  <div class="gallery">
+  <div>
+    <span><img src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwc85c50f3/images/one.jpg" alt=""></span>
+    <span><img src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw19718747/images/four.jpg" alt=""></span>
+    <span><img src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwc2126f46/images/three.jpg" alt=""></span>
+  </div>
+  <div>
+    <span><img src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw2a0c2a5e/images/six.jpg" alt=""></span>
+    <span><img src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw214b4890/images/two.jpg" alt=""></span>
+    <span><img src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw90447a48/images/five.jpg" alt=""></span>
+  </div>
+  </div>
+  <button id="next">></button>
+</div>
+</div>
+ <div class="Newletter" style="display: flex;justify-content: center;
+ align-items: center;flex-direction: column;
+height: 400px;padding: 50px;margin-top: 30px;
+width:100%;
+background-image: url('https://cdn.pixabay.com/photo/2017/11/27/07/02/time-2980690_640.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: left;
+color: #fff;
+ ">
+ <h2>Subscribe to our newsletter</h2>
+ <div class="Subscribe">
+  <input type="text" placeholder="Enter E-Mail" style="border-radius: 5px;border: none;padding: 10px;"><button style="padding:10px;border-radius: 5px;background: lightseagreen;border: 0;color: #fff;">Sign Up</button>
+  </div>
+ </div>
+</div>
+ <footer>
+  <div class="foot">
+    <div class="list1">
+              <h3>Consumer Service</h3>
+
+      <ul>     
+        
+
+        <li>Payment Options
+          </li>
+        <li>    
+        Track Order
+
+        </li>
+        <li>       
+         Encircle Program
+
+       </li>
+        <li>          
+          Find A Store
+        </li>
+      </ul>
+    </div>
+    <div class="list1">  
+            <h3>Contact Us</h3>
+
+      <ul>
+        <li>1800-266-0123
+        </li>
+        <li>
+          Help & Contact
+        </li>
+        <li>
+          FAQ's
+        </li>
+      </ul>
+    </div>
+    <div class="list1"> 
+               <h3>Policies</h3>
+
+      <ul>    
+
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+    <div class="list1"></div>
+  </div>  
+  </footer>
+</body>
+<script>
+
+  const list=document.querySelectorAll('.li');
+  const block=document.querySelector('.hover')
+list.forEach(link => {
+  link.addEventListener("mouseover",()=>{
+    block.style.display='block';
+  });
+  link.addEventListener("mouseout",()=>{
+    block.style.display='none';
+  });
+  });
+</script>
+
+<script>
+  setInterval(function() {
+      const slider = document.querySelector('.slider');
+      const scrollAmount = window.innerWidth; 
+      slider.scrollBy({
+          left: scrollAmount,
+          behavior: 'smooth'
+      });
+  }, 8000);
+
+function closeNav(){  
+  const bar=document.querySelector('.nav2');
+
+  bar.style.display='none'
+
+}
+function showbar(){  
+  const bar=document.querySelector('.nav2');
+
+  bar.style.display='flex';
+  bar.style.transition='0.5s ease';
+
+
+}
+const listLinks = document.querySelectorAll('.list li a');
+listLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        const scrollSection = link.getAttribute('href').substring(1);
+        const target = document.getElementById(scrollSection);
+        target.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+let scrollContainer=document.querySelector('.gallery');
+let prev=document.getElementById("prev");
+let nxt=document.getElementById("next");
+scrollContainer.addEventListener("wheel",(e)=>{
+  e.preventDefault();
+  scrollContainer.scrollLeft+=e.deltaY;
+})
+nxt.addEventListener("click",()=>{
+  scrollContainer.scrollLeft+=900;
+})
+prev.addEventListener("click",()=>{
+  scrollContainer.scrollLeft-=900;
+})
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        "@0.75": {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        "@1.00": {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        "@1.50": {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>
+
+</html>
